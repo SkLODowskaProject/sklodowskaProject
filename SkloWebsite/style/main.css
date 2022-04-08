@@ -1,0 +1,846 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+font-family: Helvetica, sans-serif;
+   margin: 0;
+   border: 0;
+   padding: 0;
+   height: 100vh;
+   width: 100vw;
+   background-color: whitesmoke;
+   }
+
+.graphWidth {
+    width: 100%;
+}
+
+.graphwidth2 {
+    width: 80%;
+}
+
+.intextLink {
+    text-decoration: underline 2px rgb(40,89,75);
+    color: rgb(15, 18, 17);
+    
+}
+
+.intextLink:hover {
+    text-decoration: none;
+    color: rgb(40,89,75);
+}
+
+.intextLinkbl {
+    text-decoration: underline 2px rgb(216, 125, 125);
+    color: whitesmoke;
+    
+}
+
+.intextLinkbl:hover {
+    text-decoration: none;
+    color: rgb(216, 125, 125);
+}
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+   height: 100%; /* 100% Full-height */
+   width: 0; /* 0 width - change this with JavaScript */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Stay on top */
+   top: 0; /* Stay at the top */
+   left: 0;
+   background-color: rgba(2, 3, 2, 0.95); /* Black*/
+   overflow-x: hidden; /* Disable horizontal scroll */
+   padding-top: 60px; /* Place content 60px from the top */
+   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+ }
+ 
+ /* The navigation menu links */
+.sidenav a {
+   padding: 8px 8px 8px 32px;
+   text-decoration: none;
+   font-size: 25px;
+   color: whitesmoke;
+   display: block;
+   transition: 0.3s;
+}
+ 
+ /* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+   color: rgba(40,89,75,1)
+}
+ 
+ /* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 2vw;
+   margin-left: 5vw;
+}
+
+#menubutton {
+    color: #f1f1f1;
+    position: fixed;
+    padding-top: 3%;
+    padding-left: 3%;
+    display:flex;
+    flex-direction:column;
+    width: 3vw;
+    cursor:pointer;
+}
+
+
+#menubutton span {
+    background: rgb(216, 125, 125);
+    border-radius: 20%;
+    height: 3px;
+    margin: 17% 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  
+  }
+
+
+/*rgb(216, 125, 125)*/
+
+
+
+
+
+  span:nth-of-type(1){
+   width:50%;
+   
+ }
+ 
+ span:nth-of-type(2){
+   width:100%;
+ }
+ 
+ 
+ span:nth-of-type(3){
+   width:75%;
+  
+ }
+
+ #menuCloseIco {
+    font-size: 5vw;
+ }
+
+
+#menuContent {
+    padding-top: 0%;
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+#menuContent a {
+    margin-bottom: 10%;
+}
+
+
+
+
+
+
+ 
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  width: 100%;
+  height: 100%;
+  transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+
+#skloBanner {
+    height: 100%;
+    width: 100%;
+    background: rgb(9, 11, 11);
+    background: linear-gradient(190deg, rgba(9, 11, 11 , 1) 50%, rgba(40,89,75,1) 100%);
+
+      
+}
+
+
+#headcontainer {
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+
+
+}
+
+#h1container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-family: Helvetica, sans-serif;
+    font-size: 12vw;
+    border: 0;
+    padding: 0;
+    font-weight: 700;
+    letter-spacing: 0.5vw;
+    text-align: left;
+    line-height: 1em;
+}
+
+
+#subTitleContainer {
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+
+#MCtit {
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-family: Helvetica, sans-serif;
+    font-size: 2vw;
+    border: 0;
+    padding: 0;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    text-align: left;
+    line-height: 1em;
+}
+
+
+
+#headerDescription {
+    margin-top: 10%;
+    width: 60%;
+    margin-left: 40%;
+}
+
+
+.skloCit {
+    
+    text-align: right;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    color: white;
+    letter-spacing: 0.1vw;
+    font-size: 1.5vw;
+    line-height: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+.greenBtn {
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 2% 3%;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+    animation-delay: 0.8s;
+}
+
+.greenBtn:hover {
+    background-color: whitesmoke;
+    color: black;
+    border-color: whitesmoke;
+    
+}
+
+
+
+.centButtondiv {
+    position: absolute;
+    bottom: 7%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+.sectionContainer {
+    padding-top: 15%;
+    padding-bottom: 20%;
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: auto;
+}
+
+
+.section1 {
+    width: 100%;
+}
+
+.secTitle {
+    text-align: right;
+    font-size: 8vw;
+    color: rgb(15, 18, 17);
+}
+
+   
+.skloNum {
+    font-family: Helvetica, sans-serif;
+    font-size: 12vw;
+    color: rgb(40,89,75);
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin-left: 20%;
+
+}
+
+.skloText {
+    text-align: justify;
+    font-family: Tahoma, sans-serif;
+    font-weight: 200;
+    color: rgb(15, 18, 17);
+    letter-spacing: 0.03em;
+    font-size: 1.5vw;
+    line-height: 1.7em;
+    padding-bottom: 3%;
+}
+
+.mainBody1 {
+    background-color: whitesmoke;
+}
+
+
+.mainBody2 {
+    background-color: rgb(15, 18, 17);
+}
+
+/*rgb(24, 30, 28)*/
+
+
+
+
+
+.sectionContainer2 {
+    padding-top: 15%;
+    padding-bottom: 20%;
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: auto;
+    
+}
+
+
+
+.section2 {
+    width: 100%;
+}
+
+.secTitle2 {
+    font-size: 8vw;
+    color: white;
+}
+
+   
+.skloNum2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 12vw;
+    color: rgb(199, 132, 132);
+}
+
+.section2 p {
+    color: white;
+}
+
+.textContainer2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin-right: 20%;
+    
+    margin-left: auto;
+
+}
+
+.skloText2 {
+    text-align: justify;
+    font-family: Tahoma, sans-serif;
+    font-weight: 200;
+    color: black;
+    letter-spacing: 0.1vw;
+    font-size: 1.5vw;
+    line-height: 1.7em;
+    padding-bottom: 3%;
+}
+
+.skloCitintext2 {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 0.1vw;
+    font-size: 1.5vw;
+    line-height: 1.5em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.skloCitintext1 {
+    
+    text-align: center;
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: 300;
+    color: black;
+    letter-spacing: 0.1vw;
+    font-size: 1.5vw;
+    line-height: 1.5em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+
+.subSectionG {
+    color: rgba(40,89,75);
+    font-size: 2vw;
+    font-weight: 500;
+    font-family: Helvetica, sans-serif;
+}
+.subSectionP {
+    color: rgb(199, 132, 132);
+    font-size: 2vw;
+    font-weight: 500;
+    font-family: Helvetica, sans-serif;
+}
+
+.notepdp {
+    color: rgb(199, 132, 132);
+    font-size: 5vw;
+    font-weight: 500;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.parallax {
+    
+  /* Full height */
+  height: 45%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#parallax1 {
+    background-image: url("https://velvetmag.it/wp-content/uploads/2021/11/Marie-Curie.jpg");
+}
+
+
+
+
+
+
+.italicText {
+    font-family: "Roboto Slab";
+    font-style: italic;
+}
+
+.stripText {
+    text-decoration: line-through 2px rgb(199, 132, 132);
+}
+
+
+
+.mainBodyItem {
+    background-color: rgb(15, 18, 17);
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: whitesmoke;
+    width: 45%;
+    transition: 0.3s;
+    border-radius: 10px; /* 5px rounded corners */
+    margin-bottom: 10%;
+    overflow: hidden;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+  }
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+.itemTcontainer {
+    width: 80%;
+    text-align: center;
+}
+.imgDiv {
+      width: 80%;
+      padding-top: 5%;
+      overflow: hidden;
+
+}
+
+
+
+.imgItem {
+    width: 100%;
+}
+
+.itemTitle {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.8vw;
+    line-height: 1.2em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: rgb(40,89,75);
+}
+
+
+
+
+.itemDesc {
+    font-family: Tahoma, sans-serif;
+    text-align: left;
+    letter-spacing: 0.1em;
+    font-size: 1.5vw;
+    line-height: 1.2em;
+}
+
+.itemButtondiv {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.sourceBtn {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border: 2px solid rgb(40,89,75);
+    color: black;
+    border-radius: 20px;
+    padding: 3% 5%;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+    animation-delay: 0.8s;
+}
+
+.sourceBtn:hover {
+    background-color: rgb(40,89,75);
+    color: whitesmoke;
+    border-color: whitesmoke;
+    
+}
+
+
+.sourceBtnw {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 3% 5%;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+    animation-delay: 0.8s;
+}
+
+.sourceBtnw:hover {
+    background-color: whitesmoke;
+    color: rgb(15, 18, 17);
+    border-color: whitesmoke;
+    
+}
+
+
+
+
+
+
+/* conceptual map e e/r*/
+
+
+.graphdx {
+    width: 100%;
+    height: 50%;
+    margin-top: 10%;
+}
+
+.graphsx {
+    margin-top: 10%;
+    width: 100%;
+    height: 50%;
+}
+
+.graphsx img {
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid rgb(199, 132, 132);
+}
+
+
+.graphdx img {
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid rgb(15, 18, 17);
+}
+
+
+.graphTitle {
+    text-align: right;
+    font-family: Helvetica, sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: rgb(15, 18, 17);
+}
+
+.graphTitlew {
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: rgb(199, 132, 132);
+}
+
+
+
+
+
+/*---------------------------------*/
+/*single table */
+/* Style the tab */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 14px;
+    color: whitesmoke;
+  }
+  
+  .tabcontent tr {
+    background-color: rgb(15, 18, 17);
+  }
+
+  .alignmentTable th {
+    color:rgb(199, 132, 132);
+}
+
+  .conceptTable th {
+    color:rgb(199, 132, 132);
+  }
+
+  .itemTable th {
+    color:rgb(40,89,75);
+  }
+
+  .itemTable td {
+    color: rgb(15, 18, 17);
+  }
+
+  .itemTable {
+      
+      margin-bottom: 10%;
+  }
+
+  .itemTable tr {
+    background-color: whitesmoke;
+    
+  }
+
+  .itemTable h3 {
+      text-align: center;
+  }
+/*---------------------------------*/
+/*scrolling tables*/
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+  }
+  
+
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  .tabB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    background-color: rgb(15, 18, 17);
+    
+  }
+  
+
+  /* Style the buttons that are used to open the tab content */
+  .tabB button {
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    background-color: inherit;
+    color: whitesmoke;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tabB button:hover {
+    background-color: rgb(40,89,75);
+  }
+  
+  /* Create an active/current tablink class */
+  .tabB button.active {
+    background-color: #ccc;
+    color: rgb(40,89,75);
+  }
+  
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    overflow-y: scroll;
+  }
+
+  .tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .conceptualTable {
+      margin-top: 10%;
+      margin-bottom: 10%;
+  }
+
+   .scoutingTable {
+       color: whitesmoke;
+       margin-bottom: 10%;
+   }
+
+   .scoutingTable th {
+       color:rgb(199, 132, 132);
+   }
+ 
+  
+
+
