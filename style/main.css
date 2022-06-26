@@ -200,7 +200,7 @@ h1 {
     padding: 0;
     color: whitesmoke;
     font-family: Helvetica, sans-serif;
-    font-size: 12vw;
+    font-size: 13vw;
     border: 0;
     padding: 0;
     font-weight: 700;
@@ -221,7 +221,7 @@ h1 {
     padding: 0;
     color: whitesmoke;
     font-family: Helvetica, sans-serif;
-    font-size: 2vw;
+    font-size: 1.8vmax;
     border: 0;
     padding: 0;
     font-weight: 100;
@@ -245,8 +245,8 @@ h1 {
     font-family: 'Roboto Slab', serif;
     font-weight: 100;
     color: white;
-    letter-spacing: 0.1vw;
-    font-size: 1.5vw;
+    letter-spacing: 0.1vmax;
+    font-size: 1.5vmax;
     line-height: 1.5em;
 }
 
@@ -469,7 +469,7 @@ h1 {
 .parallax {
     
   /* Full height */
-  height: 45%;
+  height: 55vmax;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
