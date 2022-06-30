@@ -335,8 +335,8 @@
                 <div class="section1">
                     <h3 class="secTitle">Conceptual <span class="skloNum">5</span><br/> Map & E/R Model</h3>
                     <div class="textContainer">
-                        <p class="skloText">Once the items have been chosen, the modeling step begins. Initially, we have represented our idea graphically, by drawing a conceptual map.
-                        In this graph, the chosen items are presented. Moreover, some entities connected with them, as well as data and relationships gathered from the holding institutions have been considered.
+                        <p class="skloText">After having chosen the items, we started with the modeling step. Initially, we have represented our idea graphically, by drawing a conceptual map.
+                        In this graph are the chosen items as well as some etities connected with them and their related data, gathered from the objects' holding institutions.
                         After this step, we moved to the design of an E-R model, that is a first abstraction of our domain.</p>
 
                         <p class="skloText">This first modeling step has been really useful in order to characterize our idea and to better define relevant connections. Furthermore, it also helped us concretizing the mental process behind the selection of the items.</p>
@@ -372,9 +372,9 @@
                 <div class="section2">
                     <h3 class="secTitle2"> <span class="skloNum2">6</span> Metadata Scouting &<br/> Alignment </h3>
                     <div class="textContainer2">
-                        <p class="skloText2">We set up an accurate research aimed at identifying how each institution described the provided items. We looked for the documentation about the metadata standards adopted by each holding institution to describe the specific item and we reported them in a table.</p>
+                        <p class="skloText2">We set up an accurate research aimed at identifying how each institution had described the provided items. We looked for the documentation about the metadata standards adopted by each holding institution to describe the specific object and we reported them in a table.</p>
                             
-                        <p class="skloText2">It must be said that only some institutions provided an explicit declaration about the used standard. In cases of missing declarations, we tried to contact the involved organizations. Every time we did not receive any reply from an institution, we moved on by considering the nature of the holding institution and the typology of the item in order to define the best metadata standard for each different situation.</p>
+                        <p class="skloText2">It must be said that only some institutions provided an explicit declaration about the used standard. In cases of missing declarations, we tried to contact the involved organizations. Every time we did not receive a reply, we moved on by considering the nature of the holding institution and the typology of the item in order to select the best metadata standard for each different situation.</p>
                         <p class="skloText2">After this step, we have aligned all the different standards according to a 4W model (Who, Where, What, When), trying to define properties related to people, places, concepts and events. THen, such properties have been compared taking as main reference the set of metadata elements provided by the Dublin Core. 
                         This operation of highlighting the differences between all the identified standards has been done in order to ensure interoperability.</p>
                     </div>
@@ -476,8 +476,8 @@
 
                     </div>
 
-                    <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'Who')" id="defaultOpen1">Who</button>
+                    <div class="tab"> <!--here I put the class "active" in order to highlight the first button when at first nothing is manually selected by the user-->
+                        <button class="tablinks active" onclick="openTab(event, 'Who')">Who</button>
                         <button class="tablinks" onclick="openTab(event, 'When')">When</button>
                         <button class="tablinks" onclick="openTab(event, 'Where')">Where</button>
                         <button class="tablinks" onclick="openTab(event, 'What')">What</button>
@@ -487,7 +487,7 @@
             
                     <!-- Tab content -->
                     <div class="alignmentTable">
-                        <div id="Who" class="tabcontent">
+                        <div id="Who" class="tabcontent defaultOpen">
                             <table>
                                 <tr>
                                     <th>Property</th>
@@ -774,11 +774,11 @@
                 <div class="section1">
                     <h3 class="secTitle">Theoretical <span class="skloNum">7</span><br/> Model & E/R Enhanced</h3>
                     <div class="textContainer">
-                        <p class="skloText">At this stage of the project we have developed a theoretical model by analyzing more in depth our items and entities. We have gathered all the possible connections between them and we enhanced the description of our domain in natural language. As you can see, the scenario is extremely interconnected so we had to make some choices in order to represent it in the most accurate and clear way. Such choices led us to add new descriptions collected from the web and also to draw new relationships between items, their descriptions and the entities of our domain.
+                        <p class="skloText">At this stage of the project, after a deeper anaysis of our domain, we developed a theoretical model. We gathered all the possible connections between the entities and we produced an enhanced description of the domain in natural language. As it can be seen, the scenario is extremely interconnected. This is due to the fact that we both collected new descriptions from the web and drew new relationships between the items and the other relevant entities of our domain.
 
                         </p>
 
-                        <p class="skloText">After having designed the theoretical model we moved back to the E/R model and we focused on the abstraction and categorisation of our domain, by highlighting all the new connections and deeply restructuring the graph.</p>
+                        <p class="skloText">After having designed the theoretical model, we moved back to the E/R model maintaining the focus on the abstraction and categorisation of our domain. Thus, all the new connections have been highlighted and the graph has been deeply restructured.</p>
 
                         <div class="graphdx">
                             <h4 class="graphTitle">Theoretical Model</h4>
@@ -811,18 +811,18 @@
                 <div class="section2">
                     <h3 class="secTitle2"> <span class="skloNum2">8</span> Conceptual <br/> Model</h3>
                     <div class="textContainer2">
-                        <p class="skloText2">During this stage we expressed in formal language the properties defined in our theoretical model, this is the first step towards the formalization of our data.
+                        <p class="skloText2">This is the first step towards the formalization of our data, where we expressed the properties defined in our theoretical model in formal language.
                         </p>   
-                        <p class="skloText2">In order to do that we have chosen the most appropriate ontologies for each one of the categories extracted from the initial 4W model: Person and Institution, Place, Event, and Concept. We have produced 4 tables - one for each of the aforementioned categories - and a graphical visualization of the entire description in which we also created a more general legend in which we have summarized the description of the general entities.</p>
-                        <p class="skloText2">In order to provide an accurate description of our entire domain we have decided to begin from the particular to move then into a more broader classification of entities and predicates. 
-                        With this aim in mind we decided to use foaf in order to describe people and relations among them, geo for the description of our places, fabio for our textual items and their descriptions and finally xsd have been used to define literals. 
-                        For what concerns the definition of our concepts we adopted a description that is at the same time general if seen from the viewpoint of the entire scenario, and specific if considered from the point of view of each one of them, in fact we decided to harmonize their description thanks to general-scope ontologies and vocabularies such as cidoc-crm, dbpedia-owl, dublin core, rdf, rdfs and schema, also useful as glue for the entirety of our elements and their connections.
-                        Finally, we decided to use frapo and in particular modsci - that is an ontology specifically designed for scientific culture - to define and describe more characteristic entities and predicates of our domain.</p>
+                        <p class="skloText2">In order to do that we chose the most appropriate ontologies for each of the categories extracted from the initial 4W model: Person and Institution, Place, Event, and Concept. We produced 4 tables - one for each of the aforementioned categories - and a graph of the entire description. In the latter, we also created a more general legend in which the description of the entities is summarized.</p>
+                        <p class="skloText2">In the interest of providing an accurate description of our domain, we decided to begin from the specific to move then to a broader classification of entities and predicates. 
+                        Given this aim, we decided to use FOAF ontology in order to describe people and relations among them, Geo ontology for the description of our places and FaBiO ontology for our textual items and their descriptions.
+                        For what concerns our concepts, we decided to harmonize their description thanks to general-scope ontologies and vocabularies such as CIDOC-CRM, DBpedia-OWL, Dublin Core, RDF, RDFS and Schema.org. This selection was driven also by the possibility of using some terms as a special glue to stick together some entities with their connections and descriptions.
+                        Finally, we decided to use FRAPO and ModSci ontologies - the last of which is specifically designed for scientific culture - to define and describe the most peculiar entities of our domain, such as the chemical elements.</p>
                         
                         <!-- ............. -->
                         <!-- conceptual tab -->
                         <div class="tab">
-                            <button class="tablinks" onclick="openTab(event, 'Person')" id="defaultOpen2">Person/Institution</button>
+                            <button class="tablinks active" onclick="openTab(event, 'Person')">Person/Institution</button>
                             <button class="tablinks" onclick="openTab(event, 'Place')">Place</button>
                             <button class="tablinks" onclick="openTab(event, 'Concept')">Concept</button>
                             <button class="tablinks" onclick="openTab(event, 'Event')">Event</button>
@@ -830,7 +830,7 @@
 
                         <!-- Tab content -->
                         <div class="conceptTable">
-                            <div id="Person" class="tabcontent">
+                            <div id="Person" class="tabcontent defaultOpen">
                                 <table>
                                     <tr>
                                         <th>Question</th>
@@ -838,7 +838,7 @@
                                         <th>Ontology</th>
                                     </tr>
                                     <tr>
-                                        <td>What is the award received?</td>
+                                        <td>What award has been received received?</td>
                                         <td>dbo:award</td>
                                         <td>DBPedia-OWL</td>
                                     </tr>
@@ -848,7 +848,7 @@
                                         <td>DBPedia-OWL</td>
                                     </tr>
                                     <tr>
-                                        <td>When did the person died?</td>
+                                        <td>When did the person die?</td>
                                         <td>dbo:deathDate</td>
                                         <td>DBPedia-OWL</td>
                                     </tr>
@@ -1287,12 +1287,12 @@
                 <div class="section1">
                     <h3 class="secTitle">Knowledge <span class="skloNum">9</span><br/> Representation  & RDF Production</h3>
                     <div class="textContainer">
-                        <p class="skloText">In this step we went back to our items in order to describe them – based on our conceptual model –  into csv tables. As a final step for this project, we decided to represent one of the items and the entirety of its connections as RDF triples, using turtle syntax serialization. Before doing that, we managed to populate our knowledge graph throughout the production of our own URIs.</p>
+                        <p class="skloText">In this step we went back to our items in order to describe them on the basis of our conceptual model. The dedscriptions can be viewed both in the table below and in the linked csv files. As the final step of this project, we decided to represent one of the items and the entirety of its connections as RDF triples using a turtle-syntax-based serialization. Before doing that, we managed to populate our knowledge graph throughout the production of our own URIs.</p>
 
                         <!-- ...................................... -->
                         <!-- Tab item buttons -->
                         <div class="tabB">
-                            <button class="tablinks" onclick="openTab(event, 'Litograph')" id="defaultOpen3">Litograph </button>
+                            <button class="tablinks active" onclick="openTab(event, 'Litograph')">Litograph</button>
                             <button class="tablinks" onclick="openTab(event, 'Stamp')">Stamp</button>
                             <button class="tablinks" onclick="openTab(event, 'NobelPhy')">Diploma Physics</button>
                             <button class="tablinks" onclick="openTab(event, 'NobelChem')">Diploma Chemistry</button>
@@ -1924,7 +1924,7 @@
                                 </table>
                             </div>
                     
-                            <div id="Litograph" class="tabcontent">
+                            <div id="Litograph" class="tabcontent defaultOpen">
                                 <h3>Portrait of Marie and Pierre Curie<br/><a class="intextLink" href="https://github.com/SkLODowskaProject/SkLODowska/blob/5e071b1139bfae76daf1cbbfe0f0f32379a7e3c0/CSV_/Print_%20Portrait%20of%20Marie%20and%20Pierre%20Curie.csv">CSV</a></h3>
                                 <table>
                                     <tr>
