@@ -842,13 +842,21 @@ table {
   }
   
 
+
+
+
   /* Style the tab content */
   .tabcontent {
     display: none;
     border: 1px solid #ccc;
     border-top: none;
-    overflow-y: scroll;
+    overflow-x: auto;
   }
+
+  /*here I overwrite the previous display none of tabcontent only for the first table*/
+  .defaultOpen {
+    display: block;
+} 
 
   .tabcontent {
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
