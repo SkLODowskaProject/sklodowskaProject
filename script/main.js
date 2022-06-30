@@ -20,6 +20,7 @@ document.getElementById("defaultOpen1").click();
 document.getElementById("defaultOpen2").click();
 document.getElementById("defaultOpen3").click();
 
+
 function openTab(evt, wwww) {
     // Declare all variables
     var i, tabcontent, tablinks;
