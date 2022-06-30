@@ -350,15 +350,76 @@ h1 {
 }
 
 
-.mainBody2 {
+.mainBody2, .footer {
     background-color: rgb(15, 18, 17);
 }
 
 /*rgb(24, 30, 28)*/
 
 
+.footerContainer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: auto;
+}
+
+.teamContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+footer h3:first-letter {
+
+    font-size: 12vw !important ;
+    color: rgb(199, 132, 132) !important ;
+}
 
 
+.memberContainer {
+    width: 30%;
+}
+
+.teamMember {
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.teamMember img:hover {
+    box-shadow: 0 0 30px whitesmoke, 0 0 5px pink;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+
+
+.teamMember p {
+    text-align: center;
+}
+
+.linksContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding-top: 1em;
+}
+
+
+.githubLogo, .mailLogo, .linkedinLogo, .instagramLogo{
+    font-size: 3.5vw;
+    color: whitesmoke;
+}
+
+i:hover {
+    scale: 1.2;
+    transition: ease-in-out;
+    transition-duration: 0.4s;
+}
 
 .sectionContainer2 {
     padding-top: 15%;
@@ -390,6 +451,7 @@ h1 {
 
 .section2 p {
     color: white;
+    font-size: 1.1em;
 }
 
 .textContainer2 {
@@ -398,7 +460,6 @@ h1 {
     flex-wrap: nowrap;
     width: 80%;
     margin-right: 20%;
-    
     margin-left: auto;
 
 }
