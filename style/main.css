@@ -373,10 +373,29 @@ h1 {
 }
 
 footer h3:first-letter {
-
-    font-size: 12vw !important ;
+    font-size: 9vw !important ;
     color: rgb(199, 132, 132) !important ;
+
 }
+
+
+.copyrightContainer {
+    text-align: center;
+    background-color: rgb(15, 18, 17);
+    width: 70%;
+    margin-left: 15%;
+    margin-right: auto;
+}
+
+#copyrightText {
+    margin: 0;
+    font-size: 1.1vmax;
+    color: whitesmoke;
+    line-height: 1.5em ;
+    letter-spacing: 0.02em;
+    padding-bottom: 2%;
+}
+
 
 
 .memberContainer {
@@ -398,9 +417,15 @@ footer h3:first-letter {
 
 
 
-.teamMember p {
+.teamMember {
     text-align: center;
 }
+
+
+.memberName {
+    font-size: 1.8vmax !important;
+}
+
 
 .linksContainer {
     display: flex;
@@ -411,7 +436,7 @@ footer h3:first-letter {
 
 
 .githubLogo, .mailLogo, .linkedinLogo, .instagramLogo{
-    font-size: 3.5vw;
+    font-size: 2.8vmax;
     color: whitesmoke;
 }
 
