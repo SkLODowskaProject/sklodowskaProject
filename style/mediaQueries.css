@@ -1,12 +1,19 @@
+
 @media only screen and (max-width: 1200px){
-    #menuContent {
-        justify-content: flex-start;
-        padding-left: 8%;
-        padding-top: 10%
+    #menuContent div a {
+        font-size: 1.5em;
     }
+}
+
+@media only screen and (max-width: 720px){
+    #menuContent {
+        padding-top: 2.5%;
+        padding-left: 5%
+    }
+
     #menuContent div a {
         margin-bottom: 7%;
-        font-size: 1.4em;
+        font-size: 1.2em;
         line-height: 1.4em;
     }
     .sidenav .closebtn {
@@ -15,4 +22,18 @@
         right: 2vmax;
         font-size: 3em;
      }
+}
+
+@media only screen and (max-width: 480px){
+    #menuContent {
+        padding-top: 10%;
+        padding-left: 5%
+    }
+}
+
+
+@media only screen and (max-height: 420px){
+    #menuContent div a {
+        font-size: 1.2em;
+    }
 }
