@@ -27,8 +27,14 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/faviconB.ico">
     
+
 </head>
 <body>
+    
+    <!-- Back to top button -->
+    <i class='bx bx-up-arrow-alt' id="toTopBtn" onclick="scrollToTop()" onmouseover="showAnimation()" onmouseleave="hideAnimation()" undefined ></i>
+
+    
     <div id="mySidenav" class="sidenav">
         <a class="closebtn" onclick="closeNav()"><i id="menuCloseIco" class='bx bx-chevron-left bx-flip-vertical' ></i></a>
         <div id="menuContent">
@@ -2202,6 +2208,33 @@
         
     </div>
 
+<script>
+    window.onscroll = () => {
+    toggleTopButton();
+    }
+    function scrollToTop(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    function toggleTopButton() {
+    if (document.body.scrollTop > 500 ||
+        document.documentElement.scrollTop > 500) {
+        document.getElementById('toTopBtn').style.visibility = "visible";
+    } else {
+        document.getElementById('toTopBtn').style.visibility = "hidden";
+    }
+    }
+
+    function showAnimation() {
+        document.getElementById('toTopBtn').classList.add("bx-tada");
+    }
+
+    function hideAnimation() {
+        document.getElementById('toTopBtn').classList.remove("bx-tada");
+    }
+
+
+</script>
 
 </body>
 </html>
