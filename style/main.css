@@ -15,9 +15,11 @@ font-family: Helvetica, sans-serif;
     width: 100%;
 }
 
-.graphwidth2 {
+
+.graphWidth2 {
     width: 80%;
 }
+
 
 .intextLink {
     text-decoration: underline 2px rgb(40,89,75);
@@ -242,7 +244,7 @@ h1 {
 
 
 #headerDescription {
-    margin-top: 10%;
+    margin-top: 5%;
     width: 60%;
     margin-left: 40%;
 }
@@ -251,13 +253,12 @@ h1 {
 
 
 .skloCit {
-    
     text-align: right;
     font-family: 'Roboto Slab', serif;
-    font-weight: 100;
+    font-weight: 200;
     color: white;
     letter-spacing: 0.1vmax;
-    font-size: 1.5vmax;
+    font-size: 1.2em;
     line-height: 1.5em;
 }
 
@@ -265,7 +266,13 @@ h1 {
 
 
 
-
+.centButtondiv {
+    position: absolute;
+    bottom: 7%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -294,13 +301,7 @@ h1 {
 
 
 
-.centButtondiv {
-    position: absolute;
-    bottom: 7%;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-}
+
 
 
 
@@ -314,7 +315,7 @@ h1 {
     padding-bottom: 20%;
     height: 100%;
     width: 70%;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-right: auto;
 }
 
@@ -346,12 +347,12 @@ h1 {
 }
 
 .skloText {
-    text-align: justify;
+    text-align: end;
     font-family: Tahoma, sans-serif;
     font-weight: 200;
     color: rgb(15, 18, 17);
     letter-spacing: 0.03em;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     line-height: 1.7em;
     padding-bottom: 3%;
 }
@@ -434,7 +435,8 @@ footer h3:first-letter {
 
 
 .memberName {
-    font-size: 1.8vmax !important;
+    color: whitesmoke;
+    font-size: 1.5em;
 }
 
 
@@ -462,7 +464,7 @@ i:hover {
     padding-bottom: 20%;
     height: 100%;
     width: 70%;
-    margin-left: 15%;
+    margin-left: 20%;
     margin-right: auto;
     
 }
@@ -475,7 +477,7 @@ i:hover {
 
 .secTitle2 {
     font-size: 8vw;
-    color: white;
+    color: whitesmoke;
 }
 
    
@@ -485,10 +487,7 @@ i:hover {
     color: rgb(199, 132, 132);
 }
 
-.section2 p {
-    color: white;
-    font-size: 1.1em;
-}
+
 
 .textContainer2 {
     display: flex;
@@ -501,12 +500,12 @@ i:hover {
 }
 
 .skloText2 {
-    text-align: justify;
+    color: whitesmoke;
+    font-size: 1.5em;
+    text-align: start;
     font-family: Tahoma, sans-serif;
     font-weight: 200;
-    color: black;
     letter-spacing: 0.1vw;
-    font-size: 1.5vw;
     line-height: 1.7em;
     padding-bottom: 3%;
 }
@@ -518,16 +517,15 @@ i:hover {
     text-align: center;
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
-    color: white;
+    color: whitesmoke;
     letter-spacing: 0.1vw;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     line-height: 1.5em;
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
-.skloCitintext1 {
-    
+.skloCitintext1 { 
     text-align: center;
     font-family: 'Roboto Slab', serif !important;
     font-weight: 300;
@@ -543,13 +541,13 @@ i:hover {
 
 .subSectionG {
     color: rgba(40,89,75);
-    font-size: 2vw;
+    font-size: 1.2em;
     font-weight: 500;
     font-family: Helvetica, sans-serif;
 }
 .subSectionP {
     color: rgb(199, 132, 132);
-    font-size: 2vw;
+    font-size: 1.2em;
     font-weight: 500;
     font-family: Helvetica, sans-serif;
 }
@@ -786,7 +784,7 @@ i:hover {
 .graphTitle {
     text-align: right;
     font-family: Helvetica, sans-serif;
-    font-size: 2vw;
+    font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 0.03em;
     color: rgb(15, 18, 17);
@@ -795,7 +793,7 @@ i:hover {
 .graphTitleB {
     text-align: left;
     font-family: Helvetica, sans-serif;
-    font-size: 2vw;
+    font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 0.03em;
     color: rgb(15, 18, 17);
@@ -804,7 +802,7 @@ i:hover {
 .graphTitlew {
     text-align: left;
     font-family: Helvetica, sans-serif;
-    font-size: 2vw;
+    font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 0.03em;
     color: rgb(199, 132, 132);
@@ -863,6 +861,7 @@ table {
   .itemTable h3 {
       text-align: center;
   }
+
 /*---------------------------------*/
 /*scrolling tables*/
 
@@ -902,9 +901,7 @@ table {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+    justify-content: space-around;
     overflow: hidden;
     border: 1px solid whitesmoke;
     background-color: rgb(15, 18, 17);
@@ -972,7 +969,7 @@ table {
 
 .scoutingTable {
     width:100%;
-    overflow: scroll;
+    overflow: auto;
     color: whitesmoke;
     margin-bottom: 10%;
 }
@@ -981,11 +978,20 @@ table {
    color:rgb(199, 132, 132);
 }
  
-  
+
+#uriContainer {
+    width:100%;
+}
+
+#uriContainer ul {
+    overflow: auto;
+    text-align: left !important;
+}
+
 #uriList li{
     font-family: Tahoma, sans-serif;
-    line-height: 1.5vw;
-    font-size: 1.7vw;
+    line-height: 1.5em;
+    font-size: 1.5em;
 }
 
 
