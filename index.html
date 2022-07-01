@@ -163,7 +163,7 @@
 
         <div class="mainBody2" id="linkS4">
 
-            <div class="sectionContainer2">
+            <div class="sectionContainer2 paddingBottom10">
                 <div class="section2">
                     <h3 class="secTitle2"> <span class="skloNum2">4</span> The Choice<br/> of the Items</h3>
                     <div class="textContainer2">
@@ -173,8 +173,6 @@
                     </div>
                 </div>
             </div>
-
-
 
             <div class="mainBodyItem">
                 <div class="card">
@@ -347,25 +345,28 @@
 
                         <p class="skloText">This first modeling step has been really useful in order to characterize our idea and to better define relevant connections. Furthermore, it also helped us concretizing the mental process behind the selection of the items.</p>
 
-                        <div class="graphdx">
-                            <h4 class="graphTitle">Conceptual Map</h4>
-                            <img src="img/graphs/MC_LOD_Map_Conceptual_.png" alt="Conceptual Map">
-                            <div class="itemButtondiv">
-                                <a class="sourceBtn" href="conceptualmap.html">HD Visualization</a>
-                                </div>
+                    </div>
+                    
+                    <div class="graphdx">
+                        <h4 class="graphTitle">Conceptual Map</h4>
+                        <img src="img/graphs/MC_LOD_Map_Conceptual_.png" alt="Conceptual Map">
+                        <div class="itemButtondiv">
+                            <a class="sourceBtn" href="conceptualmap.html">HD Visualization</a>
                         </div>
-
-                        <div class="graphdx">
-                            <h4 class="graphTitle">E/R Model</h4>
-                            <img src="img/graphs/MC_LOD_Map_E-R (2).png" alt="Conceptual Map">
-                            <div class="itemButtondiv">
-                                <a class="sourceBtn" href="ermodel.html">HD Visualization</a>
-                                </div>
+                    </div>
+    
+                    <div class="graphdx">
+                        <h4 class="graphTitle">E/R Model</h4>
+                        <img src="img/graphs/MC_LOD_Map_E-R (2).png" alt="Conceptual Map">
+                        <div class="itemButtondiv">
+                            <a class="sourceBtn" href="ermodel.html">HD Visualization</a>
                         </div>
-
                     </div>
                     
                 </div>
+            
+                
+                
             </div>
         </div>
 
@@ -786,22 +787,23 @@
 
                         <p class="skloText">After having designed the theoretical model, we moved back to the E/R model maintaining the focus on the abstraction and categorisation of our domain. Thus, all the new connections have been highlighted and the graph has been deeply restructured.</p>
 
-                        <div class="graphdx">
-                            <h4 class="graphTitle">Theoretical Model</h4>
-                            <img src="img/graphs/MC_LOD_svg_Theoretical.png" alt="Theoretical Model">
-                            <div class="itemButtondiv">
-                                <a class="sourceBtn" href="theoreticalmodel.html">HD Visualization</a>
-                            </div>
-                        </div>
                         
-                        <div class="graphdx">
-                            <h4 class="graphTitle">E/R Model Enhanced</h4>
-                            <img src="img/graphs/MC_LOD_Map_E-R-enhanced.png" alt="ENhanced E/R Model">
-                            <div class="itemButtondiv">
-                                <a class="sourceBtn" href="enhancedER.html">HD Visualization</a>
-                            </div>
-                        </div>
 
+                    </div>
+                    <div class="graphdx">
+                        <h4 class="graphTitle">Theoretical Model</h4>
+                        <img src="img/graphs/MC_LOD_svg_Theoretical.png" alt="Theoretical Model">
+                        <div class="itemButtondiv">
+                            <a class="sourceBtn" href="theoreticalmodel.html">HD Visualization</a>
+                        </div>
+                    </div>
+                    
+                    <div class="graphdx">
+                        <h4 class="graphTitle">E/R Model Enhanced</h4>
+                        <img src="img/graphs/MC_LOD_Map_E-R-enhanced.png" alt="ENhanced E/R Model">
+                        <div class="itemButtondiv">
+                            <a class="sourceBtn" href="enhancedER.html">HD Visualization</a>
+                        </div>
                     </div>
                     
                 </div>
@@ -824,461 +826,461 @@
                         Given this aim, we decided to use FOAF ontology in order to describe people and relations among them, Geo ontology for the description of our places and FaBiO ontology for our textual items and their descriptions.
                         For what concerns our concepts, we decided to harmonize their description thanks to general-scope ontologies and vocabularies such as CIDOC-CRM, DBpedia-OWL, Dublin Core, RDF, RDFS and Schema.org. This selection was driven also by the possibility of using some terms as a special glue to stick together some entities with their connections and descriptions.
                         Finally, we decided to use FRAPO and ModSci ontologies - the last of which is specifically designed for scientific culture - to define and describe the most peculiar entities of our domain, such as the chemical elements.</p>
-                        
-                        <!-- ............. -->
-                        <!-- conceptual tab -->
-                        <div class="tab">
-                            <button class="tablinks active" onclick="openTab(event, 'Person')">Person/Institution</button>
-                            <button class="tablinks" onclick="openTab(event, 'Place')">Place</button>
-                            <button class="tablinks" onclick="openTab(event, 'Concept')">Concept</button>
-                            <button class="tablinks" onclick="openTab(event, 'Event')">Event</button>
-                        </div>   
-
-                        <!-- Tab content -->
-                        <div class="conceptTable">
-                            <div id="Person" class="tabcontent defaultOpen">
-                                <table>
-                                    <tr>
-                                        <th>Question</th>
-                                        <th>Predicate</th>
-                                        <th>Ontology</th>
-                                    </tr>
-                                    <tr>
-                                        <td>What award has been received received?</td>
-                                        <td>dbo:award</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>When was the person born?</td>
-                                        <td>dbo:birthDate</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>When did the person die?</td>
-                                        <td>dbo:deathDate</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who was his/her employer?</td>
-                                        <td>dbo:employer</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>When was it founded?</td>
-                                        <td>dbo:formationDate</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who is his/her daughter?</td>
-                                        <td>crm:P152_has_parent</td>
-                                        <td>CIDOC-CRM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the gender?</td>
-                                        <td>foaf:gender</td>
-                                        <td>FOAF</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the name?</td>
-                                        <td>foaf:name</td>
-                                        <td>FOAF</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is his/her nationality?</td>
-                                        <td>dbo:nationality</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is his/her occupation?</td>
-                                        <td>schema:hasOccupation</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who are his/her relatives?</td>
-                                        <td>schema:relatedTo</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Where did he/she teach?</td>
-                                        <td>schema:workLocation</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the type?</td>
-                                        <td>rdf:type</td>
-                                        <td>RDF</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Of which institution was he/she member?</td>
-                                        <td>schema:memberOf</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Of what is it part of?</td>
-                                        <td>DC:isPartOf</td>
-                                        <td>DublinCore</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who is his/her sibling?</td>
-                                        <td>schema:sibling</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Where did he/she live?</td>
-                                        <td>schema:homeLocation</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Where is it located (headquarter)?</td>
-                                        <td>dbo:headquarter</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Whom is he/she married to?</td>
-                                        <td>schema:spouse</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Where was he/she born?</td>
-                                        <td>dbo:birthPlace</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Where did he/she die?</td>
-                                        <td>dbo:deathPlace</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>In which event did he/she take part?</td>
-                                        <td>crm:P11_participated_in</td>
-                                        <td>CIDOC-CRM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Whom does he/she worked with?</td>
-                                        <td>schema:colleague</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Which is the official name of the organisation?</td>
-                                        <td>schema:legalName</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Whom is he/she related to?</td>
-                                        <td>schema:relatedTo</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                </table>  
-                            </div>
-                            <div id="Place" class="tabcontent"> 
-                                <table>
-                                    <tr>
-                                        <th>Question</th>
-                                        <th>Predicate</th>
-                                        <th>Ontology</th>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the country?</td>
-                                        <td>dbo:country</td>
-                                    <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Which is the country code?</td>
-                                        <td>dbo:iso31661Code</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the latitude?</td>
-                                        <td>geo:lat</td>
-                                        <td>GEO</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the longitude?</td>
-                                        <td>geo:long</td>
-                                        <td>GEO</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the name?</td>
-                                        <td>schema:name</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the type?</td>
-                                        <td>rdf:type</td>
-                                        <td>RDF</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is it part of?</td>
-                                        <td>DC:isPartOf</td>
-                                        <td>DublinCore</td>
-                                    </tr>
-                                </table>    
-                            </div> 
-                            <div id="Event" class="tabcontent">
-                                <table>
-                                    <tr>
-                                        <th>Question</th>
-                                        <th>Predicate</th>
-                                        <th>Ontology</th>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the type of entity?</td>
-                                        <td>rdf:type</td>
-                                        <td>RDF</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the timespan of the event?</td>
-                                        <td>crm:P4_has_time-span</td>
-                                        <td>CIDOC-CRM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>In which place did the event occour?</td>
-                                        <td>crm:P7_took_place_at</td>
-                                        <td>CIDOC-CRM</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div id="Concept" class="tabcontent">
-                                <table>
-                                    <tr>
-                                        <th>Question</th>
-                                        <th>Predicate</th>
-                                        <th>Ontology</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Where is it preserved?</td>
-                                        <td>crm:P50_has_current_keeper</td>
-                                        <td>CIDOC-CRM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who did assigned the prize?</td>
-                                        <td>frapo:isAwardedBy</td>
-                                        <td>FRAPO</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the source the object is based on?</td>
-                                        <td>schema:isBasedOn</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What does it certificates?</td>
-                                        <td>foaf:primaryTopic</td>
-                                        <td>FOAF</td>
-                                    </tr>
-                                    <tr>
-                                        <td>When was it conferred?</td>
-                                        <td>frapo:hasAwardDate</td>
-                                        <td>FRAPO</td>
-                                    </tr>
-                                    <tr>
-                                        <td>When has it been discovered?</td>
-                                        <td>dbo:discoveryDate</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who is the creator/author?</td>
-                                        <td>crm:P94_was_created_by</td>
-                                        <td>CIDOC-CRM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who/what does it depict?</td>
-                                        <td>crm:P62_depicts</td>
-                                        <td>CIDOC-CRM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who is the discoverer?</td>
-                                        <td>modsci:isDiscoveredByScientist</td>
-                                        <td>Modsci</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the length/duration?</td>
-                                        <td>schema:duration (ISO 8601 format)</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the genre?</td>
-                                        <td>schema:genre</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Which is the alternative format?</td>
-                                        <td>DC:hasFormat</td>
-                                        <td>DublinCore</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who is the director?</td>
-                                        <td>schema:director</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the ingredient?</td>
-                                        <td>schema:activeIngredient</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the manifestation?</td>
-                                        <td>fabio:hasManifestation</td>
-                                        <td>Fabio</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is it made of?</td>
-                                        <td>crm:P45_consists_of</td>
-                                        <td>CIDOC-CRM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What does the resource include?</td>
-                                        <td>DC:hasPart</td>
-                                        <td>DublinCore</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Which part is it composed of?</td>
-                                        <td>fabio:hasPart</td>
-                                        <td>Fabio</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the subject?</td>
-                                        <td>DC:subject</td>
-                                        <td>DublinCore</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is its symbol?</td>
-                                        <td>dbo:chemicalSymbol</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the title?</td>
-                                        <td>crm:P102_has_title</td>
-                                        <td>CIDOC-CRM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the type?</td>
-                                        <td>rdf:type</td>
-                                        <td>RDF</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who is the author of the screenplay?</td>
-                                        <td>schema:author</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the resource that includes it?</td>
-                                        <td>fabio:isPartOf</td>
-                                        <td>Fabio</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the language?</td>
-                                        <td>fabio:hasLanguage</td>
-                                        <td>Fabio</td>
-                                    </tr>
-                                    <tr>
-                                        <td>When was it created?</td>
-                                        <td>DC:created</td>
-                                        <td>DublinCore</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who is the main character?</td>
-                                        <td>dbo:mainCharacter</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What does it makes use of?</td>
-                                        <td>dbo:uses</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>After what was it named?</td>
-                                        <td>dbo:namedAfter</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Where has it been created?</td>
-                                        <td>schema:locationCreated</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Where has it been published?</td>
-                                        <td>fabio:hasPlaceOfPublication</td>
-                                        <td>Fabio</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who is the manufacturer?</td>
-                                        <td>crm:P108_was_produced_by</td>
-                                        <td>CIDOC-CRM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who is the producer?</td>
-                                        <td>schema:productionCompany</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>When did the production end?</td>
-                                        <td>dbo:productionEndYear</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>When did the production start?</td>
-                                        <td>dbo:productionStartYear</td>
-                                        <td>DBPedia-OWL</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is the used technique?</td>
-                                        <td>crm:P32_used_general_technique</td>
-                                        <td>CIDOC-CRM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who is the publisher?</td>
-                                        <td>fabio:hasPublisher</td>
-                                        <td>Fabio</td>
-                                    </tr>
-                                    <tr>
-                                        <td>What is it related to?</td>
-                                        <td>schema:isRelatedTo</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>When was it realeased?</td>
-                                        <td>fabio:hasPublicationYear</td>
-                                        <td>Fabio</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Where is it set?</td>
-                                        <td>schema:contentLocation</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who are the actors involved?</td>
-                                        <td>schema:actors</td>
-                                        <td>Schema.org</td>
-                                    </tr>
-                                    <tr>
-                                        <td>During which event has it been used?</td>
-                                        <td>crm:P19_was_made_for<br/></td>
-                                        <td>CIDOC-CRM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Who is the rights owner?</td>
-                                        <td>DC:rights</td>
-                                        <td>DublinCore</td>
-                                    </tr>
-                                    <tr>
-                                        <td>When was it published?</td>
-                                        <td>fabio:hasPublicationDate</td>
-                                        <td>Fabio</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- ........................ -->
-
-
-                        <div class="graphsx">
-                            <h4 class="graphTitlew">Conceptual Model</h4>
-                            <img src="img/graphs/MC_LOD_Map_Conceptual (3).png" alt="Conceptual Model">
-                            <div class="itemButtondiv">
-                                <a class="sourceBtnw" href="conceptualmodel.html">HD Visualization</a>
-                                </div>
-                        </div>>
+                    
                     </div>
+
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openTab(event, 'Person')">Person/Institution</button>
+                        <button class="tablinks" onclick="openTab(event, 'Place')">Place</button>
+                        <button class="tablinks" onclick="openTab(event, 'Concept')">Concept</button>
+                        <button class="tablinks" onclick="openTab(event, 'Event')">Event</button>
+                    </div>   
+
+                    <!-- Tab content -->
+                    <div class="conceptTable">
+                        <div id="Person" class="tabcontent defaultOpen">
+                            <table>
+                                <tr>
+                                    <th>Question</th>
+                                    <th>Predicate</th>
+                                    <th>Ontology</th>
+                                </tr>
+                                <tr>
+                                    <td>What award has been received received?</td>
+                                    <td>dbo:award</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>When was the person born?</td>
+                                    <td>dbo:birthDate</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>When did the person die?</td>
+                                    <td>dbo:deathDate</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>Who was his/her employer?</td>
+                                    <td>dbo:employer</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>When was it founded?</td>
+                                    <td>dbo:formationDate</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>Who is his/her daughter?</td>
+                                    <td>crm:P152_has_parent</td>
+                                    <td>CIDOC-CRM</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the gender?</td>
+                                    <td>foaf:gender</td>
+                                    <td>FOAF</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the name?</td>
+                                    <td>foaf:name</td>
+                                    <td>FOAF</td>
+                                </tr>
+                                <tr>
+                                    <td>What is his/her nationality?</td>
+                                    <td>dbo:nationality</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>What is his/her occupation?</td>
+                                    <td>schema:hasOccupation</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>Who are his/her relatives?</td>
+                                    <td>schema:relatedTo</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>Where did he/she teach?</td>
+                                    <td>schema:workLocation</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the type?</td>
+                                    <td>rdf:type</td>
+                                    <td>RDF</td>
+                                </tr>
+                                <tr>
+                                    <td>Of which institution was he/she member?</td>
+                                    <td>schema:memberOf</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>Of what is it part of?</td>
+                                    <td>DC:isPartOf</td>
+                                    <td>DublinCore</td>
+                                </tr>
+                                <tr>
+                                    <td>Who is his/her sibling?</td>
+                                    <td>schema:sibling</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>Where did he/she live?</td>
+                                    <td>schema:homeLocation</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>Where is it located (headquarter)?</td>
+                                    <td>dbo:headquarter</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>Whom is he/she married to?</td>
+                                    <td>schema:spouse</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>Where was he/she born?</td>
+                                    <td>dbo:birthPlace</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>Where did he/she die?</td>
+                                    <td>dbo:deathPlace</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>In which event did he/she take part?</td>
+                                    <td>crm:P11_participated_in</td>
+                                    <td>CIDOC-CRM</td>
+                                </tr>
+                                <tr>
+                                    <td>Whom does he/she worked with?</td>
+                                    <td>schema:colleague</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>Which is the official name of the organisation?</td>
+                                    <td>schema:legalName</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>Whom is he/she related to?</td>
+                                    <td>schema:relatedTo</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                            </table>  
+                        </div>
+                        <div id="Place" class="tabcontent"> 
+                            <table>
+                                <tr>
+                                    <th>Question</th>
+                                    <th>Predicate</th>
+                                    <th>Ontology</th>
+                                </tr>
+                                <tr>
+                                    <td>What is the country?</td>
+                                    <td>dbo:country</td>
+                                <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>Which is the country code?</td>
+                                    <td>dbo:iso31661Code</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the latitude?</td>
+                                    <td>geo:lat</td>
+                                    <td>GEO</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the longitude?</td>
+                                    <td>geo:long</td>
+                                    <td>GEO</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the name?</td>
+                                    <td>schema:name</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the type?</td>
+                                    <td>rdf:type</td>
+                                    <td>RDF</td>
+                                </tr>
+                                <tr>
+                                    <td>What is it part of?</td>
+                                    <td>DC:isPartOf</td>
+                                    <td>DublinCore</td>
+                                </tr>
+                            </table>    
+                        </div> 
+                        <div id="Event" class="tabcontent">
+                            <table>
+                                <tr>
+                                    <th>Question</th>
+                                    <th>Predicate</th>
+                                    <th>Ontology</th>
+                                </tr>
+                                <tr>
+                                    <td>What is the type of entity?</td>
+                                    <td>rdf:type</td>
+                                    <td>RDF</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the timespan of the event?</td>
+                                    <td>crm:P4_has_time-span</td>
+                                    <td>CIDOC-CRM</td>
+                                </tr>
+                                <tr>
+                                    <td>In which place did the event occour?</td>
+                                    <td>crm:P7_took_place_at</td>
+                                    <td>CIDOC-CRM</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="Concept" class="tabcontent">
+                            <table>
+                                <tr>
+                                    <th>Question</th>
+                                    <th>Predicate</th>
+                                    <th>Ontology</th>
+                                </tr>
+                                <tr>
+                                    <td>Where is it preserved?</td>
+                                    <td>crm:P50_has_current_keeper</td>
+                                    <td>CIDOC-CRM</td>
+                                </tr>
+                                <tr>
+                                    <td>Who did assigned the prize?</td>
+                                    <td>frapo:isAwardedBy</td>
+                                    <td>FRAPO</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the source the object is based on?</td>
+                                    <td>schema:isBasedOn</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>What does it certificates?</td>
+                                    <td>foaf:primaryTopic</td>
+                                    <td>FOAF</td>
+                                </tr>
+                                <tr>
+                                    <td>When was it conferred?</td>
+                                    <td>frapo:hasAwardDate</td>
+                                    <td>FRAPO</td>
+                                </tr>
+                                <tr>
+                                    <td>When has it been discovered?</td>
+                                    <td>dbo:discoveryDate</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>Who is the creator/author?</td>
+                                    <td>crm:P94_was_created_by</td>
+                                    <td>CIDOC-CRM</td>
+                                </tr>
+                                <tr>
+                                    <td>Who/what does it depict?</td>
+                                    <td>crm:P62_depicts</td>
+                                    <td>CIDOC-CRM</td>
+                                </tr>
+                                <tr>
+                                    <td>Who is the discoverer?</td>
+                                    <td>modsci:isDiscoveredByScientist</td>
+                                    <td>Modsci</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the length/duration?</td>
+                                    <td>schema:duration (ISO 8601 format)</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the genre?</td>
+                                    <td>schema:genre</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>Which is the alternative format?</td>
+                                    <td>DC:hasFormat</td>
+                                    <td>DublinCore</td>
+                                </tr>
+                                <tr>
+                                    <td>Who is the director?</td>
+                                    <td>schema:director</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the ingredient?</td>
+                                    <td>schema:activeIngredient</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the manifestation?</td>
+                                    <td>fabio:hasManifestation</td>
+                                    <td>Fabio</td>
+                                </tr>
+                                <tr>
+                                    <td>What is it made of?</td>
+                                    <td>crm:P45_consists_of</td>
+                                    <td>CIDOC-CRM</td>
+                                </tr>
+                                <tr>
+                                    <td>What does the resource include?</td>
+                                    <td>DC:hasPart</td>
+                                    <td>DublinCore</td>
+                                </tr>
+                                <tr>
+                                    <td>Which part is it composed of?</td>
+                                    <td>fabio:hasPart</td>
+                                    <td>Fabio</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the subject?</td>
+                                    <td>DC:subject</td>
+                                    <td>DublinCore</td>
+                                </tr>
+                                <tr>
+                                    <td>What is its symbol?</td>
+                                    <td>dbo:chemicalSymbol</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the title?</td>
+                                    <td>crm:P102_has_title</td>
+                                    <td>CIDOC-CRM</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the type?</td>
+                                    <td>rdf:type</td>
+                                    <td>RDF</td>
+                                </tr>
+                                <tr>
+                                    <td>Who is the author of the screenplay?</td>
+                                    <td>schema:author</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the resource that includes it?</td>
+                                    <td>fabio:isPartOf</td>
+                                    <td>Fabio</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the language?</td>
+                                    <td>fabio:hasLanguage</td>
+                                    <td>Fabio</td>
+                                </tr>
+                                <tr>
+                                    <td>When was it created?</td>
+                                    <td>DC:created</td>
+                                    <td>DublinCore</td>
+                                </tr>
+                                <tr>
+                                    <td>Who is the main character?</td>
+                                    <td>dbo:mainCharacter</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>What does it makes use of?</td>
+                                    <td>dbo:uses</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>After what was it named?</td>
+                                    <td>dbo:namedAfter</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>Where has it been created?</td>
+                                    <td>schema:locationCreated</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>Where has it been published?</td>
+                                    <td>fabio:hasPlaceOfPublication</td>
+                                    <td>Fabio</td>
+                                </tr>
+                                <tr>
+                                    <td>Who is the manufacturer?</td>
+                                    <td>crm:P108_was_produced_by</td>
+                                    <td>CIDOC-CRM</td>
+                                </tr>
+                                <tr>
+                                    <td>Who is the producer?</td>
+                                    <td>schema:productionCompany</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>When did the production end?</td>
+                                    <td>dbo:productionEndYear</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>When did the production start?</td>
+                                    <td>dbo:productionStartYear</td>
+                                    <td>DBPedia-OWL</td>
+                                </tr>
+                                <tr>
+                                    <td>What is the used technique?</td>
+                                    <td>crm:P32_used_general_technique</td>
+                                    <td>CIDOC-CRM</td>
+                                </tr>
+                                <tr>
+                                    <td>Who is the publisher?</td>
+                                    <td>fabio:hasPublisher</td>
+                                    <td>Fabio</td>
+                                </tr>
+                                <tr>
+                                    <td>What is it related to?</td>
+                                    <td>schema:isRelatedTo</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>When was it realeased?</td>
+                                    <td>fabio:hasPublicationYear</td>
+                                    <td>Fabio</td>
+                                </tr>
+                                <tr>
+                                    <td>Where is it set?</td>
+                                    <td>schema:contentLocation</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>Who are the actors involved?</td>
+                                    <td>schema:actors</td>
+                                    <td>Schema.org</td>
+                                </tr>
+                                <tr>
+                                    <td>During which event has it been used?</td>
+                                    <td>crm:P19_was_made_for<br/></td>
+                                    <td>CIDOC-CRM</td>
+                                </tr>
+                                <tr>
+                                    <td>Who is the rights owner?</td>
+                                    <td>DC:rights</td>
+                                    <td>DublinCore</td>
+                                </tr>
+                                <tr>
+                                    <td>When was it published?</td>
+                                    <td>fabio:hasPublicationDate</td>
+                                    <td>Fabio</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- ........................ -->
+
+
+                    <div class="graphsx">
+                        <h4 class="graphTitlew">Conceptual Model</h4>
+                        <img src="img/graphs/MC_LOD_Map_Conceptual (3).png" alt="Conceptual Model">
+                        <div class="itemButtondiv">
+                            <a class="sourceBtnw" href="conceptualmodel.html">HD Visualization</a>
+                            </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -1295,7 +1297,10 @@
                     <div class="textContainer">
                         <p class="skloText">In this step we went back to our items in order to describe them on the basis of our conceptual model. The dedscriptions can be viewed both in the table below and in the linked csv files. As the final step of this project, we decided to represent one of the items and the entirety of its connections as RDF triples using a turtle-syntax-based serialization. Before doing that, we managed to populate our knowledge graph throughout the production of our own URIs.</p>
 
-                        <!-- ...................................... -->
+
+
+                    </div>
+                                            <!-- ...................................... -->
                         <!-- Tab item buttons -->
                         <div class="tabB">
                             <button class="tablinks active" onclick="openTab(event, 'Litograph')">Litograph</button>
@@ -2109,9 +2114,10 @@
                         </div>
 
                         <!-- ----------------------------------------->
-                        <h4 class="graphTitleB">Our URIs</h4>
+                        
                         <div id="uriContainer">
-                            <ul class="skloText">
+                            <h4 class="graphTitleB">Our URIs:</h4>
+                            <ul class="listText">
                                 <li>https://sklodowska.github.io/sklodowska/items/PortraitPrint</li>
                                 <li>https://sklodowska.github.io/sklodowska/Person/MarieCurie</li>
                                 <li>https://sklodowska.github.io/sklodowska/entities/VanityFairIssue/12_22_1904</li>
@@ -2137,9 +2143,7 @@
                             <div class="itemButtondiv">
                                 <a class="sourceBtn" href="rdfvisualization.html">HD Visualization</a>
                                 </div>
-                        </div>
-
-                    </div>    
+                        </div>   
                 </div>
             </div>
         </div>
