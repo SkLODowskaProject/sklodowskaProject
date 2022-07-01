@@ -2,6 +2,8 @@
 var w = document.documentElement.clientWidth || window.innerWidth;
 
 
+
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
   document.getElementById("menubutton").style.display = "none";
@@ -42,5 +44,8 @@ function openTab(evt, wwww) {
     evt.currentTarget.className += " active";
   }
 
+
+
+  
 
 
