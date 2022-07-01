@@ -127,16 +127,16 @@ span:nth-of-type(1){
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
-    padding-left: 2.5%;
     width: 90%;
     height: 90%;
 }
 
 #menuContent div {
+    padding-left: 2.5%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: flex-start;
 }
 
 
@@ -965,19 +965,21 @@ table {
     to {opacity: 1;}
   }
 
-  .conceptualTable {
+.conceptualTable {
       margin-top: 10%;
       margin-bottom: 10%;
-  }
+}
 
-   .scoutingTable {
-       color: whitesmoke;
-       margin-bottom: 10%;
-   }
+.scoutingTable {
+    width:100%;
+    overflow: scroll;
+    color: whitesmoke;
+    margin-bottom: 10%;
+}
 
-   .scoutingTable th {
-       color:rgb(199, 132, 132);
-   }
+.scoutingTable th {
+   color:rgb(199, 132, 132);
+}
  
   
 #uriList li{
