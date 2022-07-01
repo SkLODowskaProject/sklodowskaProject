@@ -46,41 +46,37 @@ font-family: Helvetica, sans-serif;
 
 /* The side navigation menu */
 .sidenav {
-   height: 100%; /* 100% Full-height */
+   height: 100%; 
    width: 0; /* 0 width - change this with JavaScript */
-   position: fixed; /* Stay in place */
+   position: fixed; 
    z-index: 1; /* Stay on top */
    top: 0; /* Stay at the top */
    left: 0;
    background-color: rgba(2, 3, 2, 0.95); /* Black*/
    overflow-x: hidden; /* Disable horizontal scroll */
-   padding-top: 60px; /* Place content 60px from the top */
+   padding-top: 5%;
    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
  }
  
  /* The navigation menu links */
-.sidenav a {
-   padding: 8px 8px 8px 32px;
+
+ 
+ /* Position and style the close button (top right corner) */
+.closebtn {
+   position: absolute;
+   top: 2vmax;
+   right: 2vmax;
+   margin-left: 5vmin;
    text-decoration: none;
-   font-size: 25px;
+   font-size: 5vmax;
    color: whitesmoke;
    display: block;
    transition: 0.3s;
 }
- 
- /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-   color: rgba(40,89,75,1)
-}
- 
- /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-   position: absolute;
-   top: 0;
-   right: 25px;
-   font-size: 2vw;
-   margin-left: 5vw;
-}
+.closebtn:hover {
+    color: rgba(40,89,75,1)
+ }
+
 
 #menubutton {
     color: #f1f1f1;
@@ -89,7 +85,7 @@ font-family: Helvetica, sans-serif;
     padding-left: 3%;
     display:flex;
     flex-direction:column;
-    width: 3vw;
+    width: 4vmax;
     cursor:pointer;
 }
 
@@ -98,7 +94,7 @@ font-family: Helvetica, sans-serif;
     background: rgb(216, 125, 125);
     border-radius: 20%;
     height: 3px;
-    margin: 17% 0;
+    margin: 15% 0;
     transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
   
   }
@@ -110,7 +106,7 @@ font-family: Helvetica, sans-serif;
 
 
 
-  span:nth-of-type(1){
+span:nth-of-type(1){
    width:50%;
    
  }
@@ -125,25 +121,38 @@ font-family: Helvetica, sans-serif;
   
  }
 
- #menuCloseIco {
-    font-size: 5vw;
- }
 
 
 #menuContent {
-    padding-top: 0%;
-    padding-left: 5%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 2.5%;
+    width: 90%;
+    height: 90%;
+}
+
+#menuContent div {
+    display: flex;
     flex-direction: column;
-    height: 100%;
-    
+    justify-content: space-around;
 }
 
-#menuContent a {
-    margin-bottom: 10%;
+
+#menuContent div a{
+    text-decoration: none;
+    font-size: 2em;
+    color: whitesmoke;
+    display: block;
+    transition: 0.3s;
 }
 
+ 
+ /* When you mouse over the navigation links, change their color */
+ #menuContent div a:hover {
+   color: rgba(40,89,75,1)
+}
 
 
 
@@ -237,6 +246,8 @@ h1 {
     width: 60%;
     margin-left: 40%;
 }
+
+
 
 
 .skloCit {
