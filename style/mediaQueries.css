@@ -219,6 +219,9 @@
         font-size: 0.6em;
     }
 
+    .externalImageContainer {
+        width: 400%;
+    }
 
 }
 
@@ -226,11 +229,6 @@
 
 
 @media only screen and (max-width: 420px){
-
-    .centButtondiv {
-        position: absolute;
-        bottom: 20%;
-    }
 
     #copyrightText{
         font-size: 0.5em;
