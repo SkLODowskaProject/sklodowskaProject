@@ -247,3 +247,81 @@
 
 
 }
+
+
+
+@media (hover: hover) and (pointer: fine) {
+    .closebtn:hover {
+        color: rgba(40,89,75,1)
+    }
+
+    #menuContent div a:hover {
+        color: rgba(40,89,75,1)
+    }
+    
+    .closebtn:hover {
+        cursor: pointer; 
+    }
+
+    .greenBtn:hover {
+        background-color: whitesmoke;
+        color: black;
+        border-color: whitesmoke;
+        
+    }
+
+    .teamMember img:hover {
+        box-shadow: 0 0 30px whitesmoke, 0 0 5px pink;
+        transition: ease-in-out;
+        transition-duration: 0.5s;
+    }
+
+    i:hover {
+        scale: 1.2;
+        transition: ease-in-out;
+        transition-duration: 0.4s;
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+
+    .sourceBtn:hover {
+        background-color: rgb(40,89,75);
+        color: whitesmoke;
+        border-color: whitesmoke;
+        
+    }
+
+    .sourceBtnw:hover {
+        background-color: whitesmoke;
+        color: rgb(15, 18, 17);
+        border-color: whitesmoke;
+        
+    }
+
+    .tab button:hover {
+        background-color: #ddd;
+    }
+
+    .tabB button:hover {
+        background-color: rgb(40,89,75);
+    }
+
+    .intextLinkbl:hover {
+        text-decoration: none;
+        color: rgb(216, 125, 125);
+    }
+
+    .intextLink:hover {
+        text-decoration: none;
+        color: rgb(40,89,75);
+    }
+
+    
+
+
+
+
+
+}
