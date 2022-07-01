@@ -8,18 +8,77 @@
         font-size: 1em;
     }
 
-    .skloText, .skloText2, .memberName, .graphTitle, .graphTitlew, .graphTitleB {
-        font-size: 1.2em;
+    .skloText, .skloText2 {
+        font-size: 1.3em;
     }
 
-    .skloCitintext, .skloCitintext2 {
-        font-size: 1.2em;
+    .memberName, .graphTitle, .graphTitlew, .graphTitleB {
+        font-size: 1.5em;
+    }
+
+    .skloCitintext1, .skloCitintext2 {
+        font-size: 1.3em;
         width:80%;
         margin-left: 10%;
         margin-right: auto;
     }
 
+    .itemTitle {
+        font-size: 1.2em;
+    }
+
+    .itemDesc {
+        font-size: 1em;
+    }
+    
+    .sourceBtn {
+        font-weight: 600;
+        padding: 6% 10%;
+    }
+
+    #copyrightText{
+        font-size: 0.8em;
+    }
+
+    table th {
+        font-size: 1.2em;
+    }
+    
+    table td {
+        font-size: 1em;
+    }
+    
+    .tab button {
+        font-size: 1em;
+    }
+    
+    .tabB button {
+        font-size: 1em;
+    }
+
 }
+
+
+
+@media only screen and (max-width: 960px){
+    .mainBodyItem {
+        column-count: 2;
+    }
+
+    .card {
+        margin-bottom: 10%;
+        width: 98%;
+    }
+
+}
+
+@media only screen and (max-width: 780px){
+    .listText li{
+        font-size: 1.2em;
+        line-height: 1.6em;
+    }
+}
+
 
 @media only screen and (max-width: 720px){
     #menuContent {
@@ -57,7 +116,7 @@
     }
 
     .graphTitle, .graphTitleB, .graphTitlew {
-        font-size: 1em;
+        font-size: 1.2em;
         text-align: center;
     }
 
@@ -68,20 +127,37 @@
         margin-right: auto;
     }
 
-
-
-
-
-    .graphWidth {
-        width: 50%;
+    table th {
+        font-size: 1em;
     }
     
-    .graphWidth2 {
-        width: 60%;
+    table td {
+        font-size: 0.8em;
     }
+    
+    .tab button {
+        font-size: 0.8em;
+    }
+    
+    .tabB button {
+        font-size: 0.8em;
+    }
+
+
 
 }
 
+
+
+@media only screen and (max-width: 660px){
+    .mainBodyItem {
+        column-count: 1;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 15%;
+    }
+}
 
 
 @media only screen and (max-width: 480px){
@@ -134,14 +210,30 @@
         overflow: auto;
     }
 
+    .listText li{
+        font-size: 1.0em;
+        line-height: 1.5em;
+    }
+
+    #copyrightText{
+        font-size: 0.6em;
+    }
+
 
 }
+
+
+
 
 @media only screen and (max-width: 420px){
 
     .centButtondiv {
         position: absolute;
         bottom: 20%;
+    }
+
+    #copyrightText{
+        font-size: 0.5em;
     }
 
 }
