@@ -1,0 +1,18 @@
+@media only screen and (max-width: 1200px){
+    #menuContent {
+        justify-content: flex-start;
+        padding-left: 8%;
+        padding-top: 10%
+    }
+    #menuContent div a {
+        margin-bottom: 7%;
+        font-size: 1.4em;
+        line-height: 1.4em;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 3vmax;
+        right: 2vmax;
+        font-size: 3em;
+     }
+}
