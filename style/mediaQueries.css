@@ -162,6 +162,7 @@
 
 @media only screen and (max-width: 480px){
 
+
     #headerDescription {
         padding-top: 25%;
         width: 100%;
@@ -229,6 +230,12 @@
 
 
 @media only screen and (max-width: 420px){
+    #toTopBtn{
+        bottom: 4%;
+        right: 2%;
+        font-size: 4vmax;
+        color: rgb(216, 125, 125);
+        }
 
     #copyrightText{
         font-size: 0.5em;
@@ -318,7 +325,7 @@
         color: rgb(40,89,75);
     }
 
-    
+
 
 
 
