@@ -26,10 +26,7 @@ font-family: Helvetica, sans-serif;
     color: rgb(15, 18, 17);
 }
 
-.intextLink:hover {
-    text-decoration: none;
-    color: rgb(40,89,75);
-}
+
 
 .intextLinkbl {
     text-decoration: underline 2px rgb(216, 125, 125);
@@ -37,10 +34,7 @@ font-family: Helvetica, sans-serif;
     
 }
 
-.intextLinkbl:hover {
-    text-decoration: none;
-    color: rgb(216, 125, 125);
-}
+
 
 
 
@@ -74,9 +68,7 @@ font-family: Helvetica, sans-serif;
    display: block;
    transition: 0.3s;
 }
-.closebtn:hover {
-    color: rgba(40,89,75,1)
- }
+
 
 
 #menubutton {
@@ -150,10 +142,7 @@ span:nth-of-type(1){
 }
 
  
- /* When you mouse over the navigation links, change their color */
- #menuContent div a:hover {
-   color: rgba(40,89,75,1)
-}
+
 
 
 
@@ -291,12 +280,7 @@ h1 {
     animation-delay: 0.8s;
 }
 
-.greenBtn:hover {
-    background-color: whitesmoke;
-    color: black;
-    border-color: whitesmoke;
-    
-}
+
 
 
 
@@ -420,11 +404,7 @@ footer h3:first-letter {
 }
 
 
-.teamMember img:hover {
-    box-shadow: 0 0 30px whitesmoke, 0 0 5px pink;
-    transition: ease-in-out;
-    transition-duration: 0.5s;
-}
+
 
 
 
@@ -452,11 +432,7 @@ footer h3:first-letter {
     color: whitesmoke;
 }
 
-i:hover {
-    scale: 1.2;
-    transition: ease-in-out;
-    transition-duration: 0.4s;
-}
+
 
 .sectionContainer2 {
     padding-top: 15%;
@@ -645,9 +621,7 @@ i:hover {
     transition-duration: 0.5s;
   }
 
-.card:hover {
-    transform: scale(1.02);
-}
+
 
 
 .itemTcontainer {
@@ -715,12 +689,7 @@ i:hover {
     animation-delay: 0.8s;
 }
 
-.sourceBtn:hover {
-    background-color: rgb(40,89,75);
-    color: whitesmoke;
-    border-color: whitesmoke;
-    
-}
+
 
 
 .sourceBtnw {
@@ -739,12 +708,7 @@ i:hover {
     animation-delay: 0.8s;
 }
 
-.sourceBtnw:hover {
-    background-color: whitesmoke;
-    color: rgb(15, 18, 17);
-    border-color: whitesmoke;
-    
-}
+
 
 
 
@@ -886,10 +850,7 @@ table {
     transition: 0.3s;
   }
   
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
+
   
   /* Create an active/current tablink class */
   .tab button.active {
@@ -923,10 +884,7 @@ table {
     transition: 0.3s;
   }
   
-  /* Change background color of buttons on hover */
-  .tabB button:hover {
-    background-color: rgb(40,89,75);
-  }
+
   
   /* Create an active/current tablink class */
   .tabB button.active {
