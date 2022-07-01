@@ -24,7 +24,6 @@ font-family: Helvetica, sans-serif;
 .intextLink {
     text-decoration: underline 2px rgb(40,89,75);
     color: rgb(15, 18, 17);
-    margin-top: 5%;
 }
 
 .intextLink:hover {
@@ -1015,4 +1014,8 @@ table td {
 
 .tabB button {
     font-size: 1.2em;
+}
+
+.externalImageContainer {
+    width: 200%;
 }
