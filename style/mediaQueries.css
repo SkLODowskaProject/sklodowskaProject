@@ -3,6 +3,22 @@
     #menuContent div a {
         font-size: 1.5em;
     }
+
+    .skloCit {
+        font-size: 1em;
+    }
+
+    .skloText, .skloText2, .memberName, .graphTitle, .graphTitlew, .graphTitleB {
+        font-size: 1.2em;
+    }
+
+    .skloCitintext, .skloCitintext2 {
+        font-size: 1.2em;
+        width:80%;
+        margin-left: 10%;
+        margin-right: auto;
+    }
+
 }
 
 @media only screen and (max-width: 720px){
@@ -22,18 +38,122 @@
         right: 2vmax;
         font-size: 3em;
      }
+
+    .skloCit {
+        font-size: 0.8em;
+    }
+
+    .centButtondiv {
+        position: absolute;
+        bottom: 10%;
+    }
+
+    .greenBtn {
+        font-weight: 500;
+    }
+
+    .skloText, .skloText2, .memberName {
+        font-size: 1em;
+    }
+
+    .graphTitle, .graphTitleB, .graphTitlew {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .skloCitintext1, .skloCitintext2 {
+        font-size: 1em;
+        width:80%;
+        margin-left: 10%;
+        margin-right: auto;
+    }
+
+
+
+
+
+    .graphWidth {
+        width: 50%;
+    }
+    
+    .graphWidth2 {
+        width: 60%;
+    }
+
 }
 
+
+
 @media only screen and (max-width: 480px){
+
+    #headerDescription {
+        padding-top: 25%;
+        width: 100%;
+        margin: 0;
+    }
+
+
     #menuContent {
         padding-top: 10%;
         padding-left: 5%
     }
+
+    .teamContainer{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .teamContainer div {
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .teamContainer div p {
+        margin-bottom: 0;
+    }
+
+    .greenBtn {
+        padding: 4% 6%;
+    }
+
+    .sectionContainer, .sectionContainer2 {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: auto;
+    }
+
+
+    .textContainer, .textContainer2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .tabB {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow: auto;
+    }
+
+
 }
+
+@media only screen and (max-width: 420px){
+
+    .centButtondiv {
+        position: absolute;
+        bottom: 20%;
+    }
+
+}
+
+
+
 
 
 @media only screen and (max-height: 420px){
     #menuContent div a {
         font-size: 1.2em;
     }
+
+
 }
