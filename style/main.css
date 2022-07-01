@@ -93,7 +93,16 @@ font-family: Helvetica, sans-serif;
   }
 
 
-/*rgb(216, 125, 125)*/
+#toTopBtn {
+    visibility: hidden;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    font-size: 6vmax;
+    font-weight: 100;
+    color: rgb(216, 125, 125);
+}
+
 
 
 
@@ -977,3 +986,6 @@ table td {
 .externalImageContainer {
     width: 200%;
 }
+
+
+
