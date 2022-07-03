@@ -81,9 +81,15 @@
 
 
 @media only screen and (max-width: 720px){
-    .parallax {
-
-        background-attachment: scroll;
+    .parallax{
+        height: 500px;
+    }
+    .parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .parallax6, .parallax7, .parallax8  {
+        min-height: 500px !important;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     #menuContent {
