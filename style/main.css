@@ -546,7 +546,7 @@ footer h3:first-letter {
 }
 
 .parallax {
-  height: 55vmax;
+  height: 50vmax;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
