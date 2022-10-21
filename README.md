@@ -1,4 +1,4 @@
-# SkLODowska - a Linked Open Data Project
+# SkŁODowska - a Linked Open Data Project
 
 The repository contains the material for the final project of the "Knowledge Organization and Cultural Heritage" course of the master's degree in [Digital Humanities and Digital Knowledge](https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge) of the University of Bologna.
 
