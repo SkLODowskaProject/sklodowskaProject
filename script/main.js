@@ -1,8 +1,14 @@
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+//let userAgent = navigator.userAgent;
+//if(userAgent.match(/safari/i)){
+//  let els = document.getElementsByClassName('.parallax');
+//  if(els.lenght > 0) {
+//    console.log('parallax');
+//  }
+//};
+
+
+
 var w = document.documentElement.clientWidth || window.innerWidth;
-
-
-
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
