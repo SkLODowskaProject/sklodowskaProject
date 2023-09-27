@@ -80,16 +80,15 @@ font-family: Helvetica, sans-serif;
     flex-direction:column;
     width: 4vmax;
     cursor:pointer;
+    mix-blend-mode: difference;
 }
 
 
 #menubutton span {
-    background: rgb(216, 125, 125);
-    border-radius: 20%;
-    height: 3px;
-    margin: 15% 0;
+    background: whitesmoke;
+    height: 5px;
+    margin: 12.5% 0;
     transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  
   }
 
 
@@ -100,7 +99,8 @@ font-family: Helvetica, sans-serif;
     right: 2%;
     font-size: 6vmax;
     font-weight: 100;
-    color: rgb(216, 125, 125);
+    color: whitesmoke;
+    mix-blend-mode: difference;
 }
 
 
@@ -546,20 +546,14 @@ footer h3:first-letter {
     padding-bottom: 0 !important;
 }
 
-/*.parallax {
-    height: 50vmax;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
-
 .parallax {
     height: 50vmax;
+    /*background-attachment: fixed; I add it for non Safari browsers only in JS*/
+    /*background-position: center;*/
+    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 }
+
 
 #parallax1 {
     background-image: url("https://velvetmag.it/wp-content/uploads/2021/11/Marie-Curie.jpg");
