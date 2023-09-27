@@ -546,14 +546,20 @@ footer h3:first-letter {
     padding-bottom: 0 !important;
 }
 
-.parallax {
-  height: 50vmax;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/*.parallax {
+    height: 50vmax;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
 
+.parallax {
+    height: 50vmax;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
 
 #parallax1 {
     background-image: url("https://velvetmag.it/wp-content/uploads/2021/11/Marie-Curie.jpg");
